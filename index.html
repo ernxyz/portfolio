@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/c1c1a4a40c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">About</a></li>
+        <li><a href="#projects-place">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section id="welcome-section">
+      <img id="square-me" src="./img/square-me.jpg" alt="a photo of mine">
+      <h1>Hello there! I'm Ernesto</h1>
+      <p>a software developer</p>
+      <p class="my-info hide-content">Welcome to my site!</p>
+      <p class="my-info hide-content">My name is Ernesto Colmenares. I've been programming for about two years</p>
+      <p class="my-info hide-content">I'm heading to be a Full-Stack developer</p>
+    </section>
+
+    <span id="projects-place"></span>
+    <section id="projects">
+      <h2 id="project-title">These are some of my projects</h2>
+      <hr id="project-divider" />
+
+      <div class="project-tile">
+        <a target="_blank" class="project-link" href="https://github.com/ernz29/movie-reviews-app">
+          <div class="project">
+            <!-- <img src="https://static.javatpoint.com/androidpages/images/movie-apps-for-android2.png" alt="" /> -->
+            <img src="./img/movies.jpg" alt="" />
+            <h4>Movie Reviews Web App</h4>
+          </div>
+        </a>
+
+        <a target="_blank" class="project-link" href="https://github.com/ernz29/ATM-project">
+          <div class="project">
+            <!-- <img src="https://images-platform.99static.com//j215gUdsHFwgIp4D4o-zpqsXUjw=/88x98:935x945/fit-in/500x500/99designs-contests-attachments/119/119436/attachment_119436552" alt="" /> -->
+            <img src="./img/atm.jpg" alt="" />
+            <h4>ATM Desktop App</h4>
+          </div>
+        </a>
+
+        <a target="_blank" class="project-link" href="https://github.com/ernz29/YT-downloader">
+          <div class="project">
+            <!-- <img src="https://onilab.com/blog/wp-content/uploads/2020/02/Progressive-Web-Application-Examples-Onilab.jpg" alt="" /> -->
+            <img src="./img/yt.jpg" alt="" />
+            <!-- bill-maker -->
+            <h4>YouTube Video Downloader</h4>
+          </div>
+        </a>
+
+        <!-- <a class="project-link" href="#"> -->
+          <span id="dropdown" style="display: none;"></span>
+          <div class="dropdown">
+            <a class="dropbtn" href="#dropdown">
+              <div class="project project-no">
+                <!-- <img src="https://assets-global.website-files.com/5fda3048302e579473bfb454/6373c88ae475023e2152fa4c_6059c450a1fe0cf52b07f490_CleanShot%2520Slite%2520Technical%2520Doc%2520Template%2520-%2520Technical%2520Doc%2520Template%2520at%252011.34.46.png" alt="" /> -->
+                <img src="./img/free.jpg" alt="" />
+                <h4>Responsive Web Design Course</h4>
+              </div>
+            </a>
+            <div class="dropdown-content">
+              <a href="./rwd/Documentation Page/presentation.html">Documentation Page</a>
+              <a href="./rwd/Landing Page/presentation.html">Landing Page</a>
+              <a href="./rwd/Survey Form/presentation.html">Survey Form</a>
+              <a href="./rwd/Tribute Page/presentation.html">Tribute Page</a>
+            </div>
+          </div>
+          <!-- </a> -->
+      </div>
+
+    </section>
+    <section id="contact">
+      <h1>Let's work together</h1>
+      <p>How do you take your coffee?</p>
+      <div id="contact-ways">
+        <a target="_blank" class="contact-link" href="mailto:ernej29@gmail.com"><i class="fa-sharp fa-solid fa-envelope"></i>E-mail</a>
+        <!-- Copiar  ern3z_#1988 y dar aviso para Discord -->
+        <a target="_blank" class="contact-link" id="discord"><i class="fa-brands fa-discord"></i>Discord <span id="user">ern3z_#1988</span></a>
+        <a id="profile-link" target="_blank" class="contact-link" href="https://github.com/ernz29"><i class="fa-brands fa-github "></i>Github</a>
+        <!-- modal -->
+        <div class="modal-overlay">
+          <div class="modal-container">
+            <div class="modal-header">
+              <h3>discord username copied to clipboard</h3>
+              <button class="close-btn btn">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+            <p>I'll be waiting for your message!</p>
+          </div>
+        </div>
+        <!-- end of modal -->
+      </div>
+    </section>
+    <footer>
+      <p>This is my official portfolio</p>
+      <p>© Created by the official me</p>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

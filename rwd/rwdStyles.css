@@ -1,0 +1,36 @@
+/* Presentations section */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #354f52;
+  --second-bg-color: #52796f;
+  --font-family: 'Anybody', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(202,210,197,1);
+  color: #2f3e46;;
+  font-family: var(--font-family);
+  font-size: large;
+}
+
+.presentation-title {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.presentation-frame {
+  width: 90%;
+  height: calc(100vh - 100px);
+  margin-left: 5%;
+  border: 3px solid #354f52;
+  background-color: #fff;
+}
