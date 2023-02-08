@@ -1,5 +1,4 @@
-const body = document.querySelector("body");
-const welcomeSection = document.querySelector("#welcome-section");
+// Pic thing
 
 const myPic = document.getElementById("square-me");
 const h1 = document.querySelector("#welcome-section > h1");
@@ -17,7 +16,7 @@ myPic.addEventListener('click', function(){
 });
 
 
-// Copiar usuario discord
+// Copy Discord username to clipboard
 
 const discord = document.getElementById('discord');
 
@@ -41,7 +40,3 @@ function copiarAlPortapapeles(id_elemento) {
   document.execCommand("copy");
   document.body.removeChild(aux);
 }
-
-
-// Modal
-
