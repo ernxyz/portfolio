@@ -127,7 +127,7 @@ a {
   width: 100%;
   margin: 10px auto;
   text-align: center;
-  font-size: xx-large;
+  font-size: 200%;
 }
 
 .project-tile {
@@ -135,7 +135,7 @@ a {
   grid-template-columns: repeat(2, 1fr);
   gap: 2em;
   place-items: center;
-  width: 75%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -168,7 +168,7 @@ a {
 .project h4 {
   background-color: var(--main-color);
   padding: 14px;
-  padding-bottom: 18px;
+  padding-bottom: 20px;
   margin-top: -4px;
 }
 
@@ -272,7 +272,7 @@ a {
 
 .modal-container {
   background-color: #fff;
-  padding: 2em;
+  padding: 1em;
   width: 500px;
   max-width: 75%;
   border-radius: 8px;
@@ -321,6 +321,65 @@ footer > * {
   display: inline-block;
   text-align: center;
   padding: 25px;
+}
+
+@media only screen and (min-width: 1500px){
+  
+  #welcome-section > p, #contact > p {
+    font-size: 200%;
+  }
+
+  #welcome-section > h1, #contact > h1 {
+    font-size: 300%;
+  }
+
+  #project-title {
+    font-size: 250%;
+  }
+
+  .my-info, .my-info:nth-of-type(2) {
+    font-size: xx-large !important;
+  }
+
+  .project-tile {
+    width: 50%;
+  }
+
+  .project h4 {
+    padding: 14px;
+    padding-bottom: 24px;
+    margin-top: -10px;
+    font-size: 105%;
+  }
+
+  #contact-ways {
+    margin-top: 150px;
+  }
+
+  .contact-link {
+    margin: 0 75px;
+    font-size: xx-large;
+  }
+
+  #contact-ways i {
+    font-size: 150%;
+  }
+
+  footer {
+    font-size: 130%;
+  }
+}
+
+@media only screen and (max-width: 1110px){
+  .project-tile {
+    font-size: medium;
+  }
+
+  .project h4 {
+    padding: 8px;
+    padding-bottom: 24px;
+    font-size: 105%;
+  }
 }
 
 @media only screen and (max-width: 940px){
@@ -399,9 +458,9 @@ footer > * {
 
   .project h4 {
     background-color: var(--main-color);
-    padding: 10px;
-    padding-bottom: 13px;
-    margin-top: -3px;
+    padding: 12px 10px 20px 10px;
+    margin-top: -8px;
+    font-size: 100%;
   }
   
   #contact h1 {
